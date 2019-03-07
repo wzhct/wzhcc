@@ -7,6 +7,10 @@ layout: compress
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
+  {% include _third-party/comments/valine.html %}
+  {% elsif site.valine_comment.enable %}
+   <div id="vcomments"></div>
+
     {% include head.html %}
 </head>
 <body>
@@ -22,7 +26,7 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    {% for post in site.posts %}
                         {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
@@ -37,6 +41,10 @@ layout: compress
             </div>
         </div>
     </header>
+    {% include _third-party/comments/valine.html %}
+    {% elsif site.valine_comment.enable %}
+     <div id="vcomments"></div>
+
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>

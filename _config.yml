@@ -27,6 +27,14 @@ sass:
 
 # Comments
 valine_shortname:   taylantatli
+valine_comment:
+  enable: true
+# app_id
+  leancloud_appid: B61V12JS8A2TLgHB91pkadao-gzGzoHsz
+# app_key
+  leancloud_appkey: 0g4pO989KlypNpyuPXdew2GG
+# placeholde
+  placeholder: “Just go go"
 
 # Social
 # if you don't have any of social below, comment the line.
