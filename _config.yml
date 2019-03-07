@@ -34,8 +34,9 @@ valine_comment:
 # app_key
   leancloud_appkey: 0g4pO989KlypNpyuPXdew2GG
 # placeholde
-  placeholder: “Just go go"
+  placeholder: "Just go go"
 
+CDN: valine: //unpkg.com/valine@1.2.0-beta1/dist/Valine.min.js
 # Social
 # if you don't have any of social below, comment the line.
 #google:
