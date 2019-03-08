@@ -7,9 +7,7 @@ layout: compress
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <div id="comment"></div>
+    {% include/valine.html %}
 
     {% include head.html %}
 </head>
@@ -41,17 +39,7 @@ layout: compress
             </div>
         </div>
     </header>
-
-    <script>
-    var valine = new Valine();
-    valine.init({
-        el:'#comment',
-        appId:'B61V12JS8A2TLgHB91pkadao-gzGzoHsz',
-        appKey:'0g4pO989KlypNpyuPXdew2GG',
-        notify:true,
-        path: '{{ page.url }}',
-        placeholder:'在这里写评论——林德熙'
-    })
+     {% include/valine.html %}
 
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>

@@ -13,6 +13,7 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+    {% include/valine.html %}
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
@@ -27,9 +28,8 @@ layout: compress
                 {{ content }}
             </div>
         </div>
+
         {% include/valine.html %}
-        {% elsif site.valine_comment.enable %}
-         <div id="comments"></div>
 
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>

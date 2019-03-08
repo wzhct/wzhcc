@@ -1,3 +1,6 @@
+{% elsif site.valine_comment.enable %}
+ <div id="comments"></div>
+
 {% if site.disqus_shortname %}
     <script type="text/javascript">
         var disqus_shortname = '{{ site.disqus_shortname }}';

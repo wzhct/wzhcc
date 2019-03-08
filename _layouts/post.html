@@ -11,6 +11,7 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+  {% include/valine.html %}
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
@@ -41,6 +42,8 @@ layout: compress
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>
+      {% include/valine.html %}
+
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
